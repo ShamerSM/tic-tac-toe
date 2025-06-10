@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tic Tac Toe</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
   <h1>Tic Tac Toe</h1>
@@ -21,8 +22,19 @@
   </div>
   <div id="result" class="hide">
     <p id="resultText"></p>
-    <button onclick="startGame()">Play Again</button>
+    <button id="play-again">Play Again</button>
   </div>
+
+  <audio id="moveSound" preload="auto">
+    <source src="https://www.fesliyanstudios.com/play-mp3/387" type="audio/mpeg">
+  </audio>
+  <audio id="winSound" preload="auto">
+    <source src="https://www.fesliyanstudios.com/play-mp3/6676" type="audio/mpeg">
+  </audio>
+  <audio id="drawSound" preload="auto">
+    <source src="https://www.fesliyanstudios.com/play-mp3/6714" type="audio/mpeg">
+  </audio>  
+
   <script src="script.js"></script>
 </body>
 </html>
